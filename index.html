@@ -15,47 +15,93 @@
 
 <body>
 
+    <nav class="navbar bg-light ">
 
-    <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#"> <img src="./" alt=""> </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">EVENEMENTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">SERVICES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">JOBS</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-                    <button type="button" class="btn btn-success rounded-pill">CONNEXION</button>
+            <a class="navbar-brand" href="#"> <img src="./images/logo.png" style="height:15vh;margin-top: 0;" title="logo coin des vielles marmites"></a>
 
-                </form>
-
-            </div>
+            <a class="navbar-brand">RESERVATIONS</a>
+            <a class="navbar-brand">EVENEMENT</a>
+            <a class="navbar-brand">SERVICES</a>
+            <a class="navbar-brand">JOBS</a>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success rounded-pill" type="submit">CONNEXION</button>
+            </form>
         </div>
     </nav>
 
-    <div class="container col-xxl-8 px-4 py-5">
+
+    <div class="container col-xxl-10 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
             <div class="col-10 col-sm-8 col-lg-6">
                 <img src="./images/sauce_boeuf.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
             </div>
-            <div class="col-lg-6">
-                <h1 class="display-5 fw-bold lh-1 mb-3">Votre santé est précieuse et nous en tenons compte</h1>
+            <div class="col-lg-6 ">
+                <h1 class="display-2 fw-bold lh-10 mb-15">Votre santé est précieuse et nous en tenons compte</h1>
 
                 <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                    <button type="button" class="btn btn-success btn-lg px-4 me-md-2 rounded-pill">Primary</button>
-                    <button type="button" class="btn btn-outline btn-lg px-4 rounded-pill">Default</button>
+                    <button type="button" class="btn btn-success btn-lg px-4 me-md-2 rounded-pill">Nos menus</button>
+                    <button type="button" class="btn btn-outline btn-lg px-4 rounded-pill">Réservations</button>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container">
+        <form action="traitement.php" method="post">
+            <div class="row">
+                <div class="col">
+                    <label for="inputAddress2">Nom</label>
+                    <input type="text" class="form-control" placeholder="Ex:ABALO">
+                </div>
+                <div class="col">
+                    <label for="inputAddress2">Prénoms</label>
+                    <input type="text" class="form-control" placeholder="Ex:Gérard">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Adresse</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="inputAddress2">Quartier</label>
+                    <input type="text" class="form-control" placeholder="Ex:Djidjolé">
+                </div>
+                <div class="col">
+                    <label for="inputAddress2">Téléphone</label>
+                    <input type="tel" class="form-control" placeholder="Votre numéro svp">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputAddress2">Email</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-group">
+                <label for="textarea">Questions/Commentaires</label>
+                <input type="text" class="form-control" id="textearea" placeholder="Votre commentaire svp">
+            </div>
+            <br>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn- mb-2 rounded-pill">Soumettre</button>
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+
+
+
+
+
+
 
 
 

@@ -5,3 +5,13 @@ body {
 .btn btn-outline {
     background-color: white;
 }
+
+.display-5 {
+    font-size: 50px;
+}
+
+form button,
+.submit {
+    background-color: #E56E00 !important;
+    border: none !important;
+}

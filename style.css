@@ -1,5 +1,22 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Koulen', cursive;
+font-family: 'Macondo', cursive;
+font-family: 'Prompt', sans-serif;
+font-family: 'Smooch', cursive; */
+
 body {
     background-color: #EBE7E6;
+}
+
+.menus {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 700;
+}
+
+.navbar-brand {
+    margin-right: 90px !important;
+    margin-left: 70px!important;
 }
 
 .btn btn-outline {
@@ -10,8 +27,104 @@ body {
     font-size: 50px;
 }
 
-form button,
-.submit {
-    background-color: #E56E00 !important;
+.recherche {
+    margin-top: 4vh;
+}
+
+.btn-connexion {
+    height: 5vh;
+    width: 20vh;
+    margin-top: 4vh;
+    text-align: center !important;
+    flex-wrap: wrap;
+}
+
+.vtr {
+    margin-top: -15vh!important;
+    font-size: 10vh!important;
+    padding-right: -60vh;
+}
+
+.sauce {
+    margin-left: -15vh;
+}
+
+.btn-menu-reserv {
+    margin-top: 15vh;
+}
+
+
+/* -----------------------------------------ICI COMMENCE MA SECTION NOS MENUS-------------------------------------------------- */
+
+.p-menu {
+    font-weight: 700;
+    font-size: 5vh;
+    color: #e56e00;
+    font-family: Josefin sans;
+    margin-bottom: 15vh!important;
+    margin-top: 7vh;
+}
+
+.plat-plus {
+    background-color: #e56e00 !important;
+    color: white !important;
+    font-family: 'Josefin Sans', sans-serif !important;
     border: none !important;
+    font-weight: 700 !important;
+    font-size: 5vh !important;
+    border-radius: 20px !important;
+    margin-bottom: 10vh!important;
+    margin-top: 10vh;
+}
+
+
+/* -----------------------------------------ICI COMMENCE MA SECTION DE FORMULAIRE-------------------------------------------------- */
+
+.div-bg-formulaire {
+    padding-bottom: 10vh;
+}
+
+.formulaire {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 3vh;
+}
+
+.formulaire input,
+textarea {
+    font-size: 3vh;
+    font-weight: 600;
+}
+
+.form-control {
+    border-radius: 0 !important;
+    margin-bottom: 3vh;
+}
+
+.formulaire h2 {
+    font-weight: 700;
+    padding-top: 10vh;
+    font-size: 5vh;
+}
+
+.form-group button,
+.submit {
+    background-color: white !important;
+    border-radius: 0 !important;
+    color: black;
+    font-weight: 700;
+    font-size: 4vh;
+}
+
+
+/* -----------------------------------------ICI COMMENCE MA SECTION DE LOCALISATION-------------------------------------------------- */
+
+.divloca {
+    margin-top: 5vh;
+}
+
+.divloca p {
+    font-weight: 700;
+    font-size: 5vh;
 }

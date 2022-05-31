@@ -77,6 +77,10 @@ body {
     margin-top: 10vh;
 }
 
+.carousel-control-prev-icon {}
+
+.carousel-control-next-icon {}
+
 
 /* -----------------------------------------ICI COMMENCE MA SECTION DE FORMULAIRE-------------------------------------------------- */
 
@@ -128,3 +132,6 @@ textarea {
     font-weight: 700;
     font-size: 5vh;
 }
+
+
+/* -----------------------------------------ICI COMMENCE MA SECTION DES AVIS-------------------------------------------------- */

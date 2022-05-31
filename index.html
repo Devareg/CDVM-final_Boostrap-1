@@ -40,7 +40,7 @@
             <div class="col-10 col-sm-8 col-lg-6">
                 <img src="./images/sauce_boeuf.png" class="d-block mx-lg-auto sauce img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
             </div>
-            <div class="col-lg-6 mb-0 ">
+            <div class="container col-lg-6 mb-0 ">
                 <h1 class="display-2 fw-bold vtr lh-25 mb-10">Votre santé est précieuse et nous en tenons compte</h1>
 
                 <div class="d-grid gap-2 btn-menu-reserv d-md-flex justify-content-md-start">
@@ -57,18 +57,132 @@
             <p class="p-menu">NOS MENUS</p>
 
 
-            <img src="./images/slide_plat1.png" class="d-grid gap-1 col-8 mx-auto" style="width:110vh; max-width: 100%; height: auto; display: block" alt="menu de plats">
+            <!-- <img src="./images/slide_plat1.png" class="d-grid gap-1 col-8 mx-auto" style="width:110vh; max-width: 100%; height: auto; display: block" alt="menu de plats"> -->
 
+            <section>
+                <div class="container-lg my-3">
+                    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                            <!-- <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li> -->
+                        </ol>
 
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./images/slide_plat1.png" class="d-block w-100" alt="Slide 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./images/slide_plat2.png" class="d-block w-100" alt="Slide 2">
+                            </div>
 
+                            <!-- Carousel controls -->
+                            <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Ici, voici le lien javascript qui fait bouger mes slides. -->
+                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+            </section>
 
-
-
-
-
+            <!-- bouton pour accéder aux restes de mes plats. -->
             <div class="d-grid gap-1 col-8 mx-auto">
                 <button class="btn btn-primary plat-plus" type="button">Cliquer ici pour accéder à tout nos plats</button>
 
+            </div>
+        </section>
+
+        <!-- PARTIE 3 (FORMULAIRE) -->
+
+        <div class="div-bg-formulaire" style="background-color:#E56E00;">
+            <div class="container mx-auto formulaire " style="width:50%;">
+                <h2>Nous contacter</h2>
+                <form action="traitement.php" method="post">
+                    <div class="row">
+                        <div class="col">
+                            <label for="inputAddress2">Nom</label>
+                            <input type="text" class="form-control" placeholder="Ex:ABALO">
+                        </div>
+                        <div class="col">
+                            <label for="inputAddress2">Prénoms</label>
+                            <input type="text" class="form-control" placeholder="Ex:Gérard">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Adresse</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="inputAddress2">Quartier</label>
+                            <input type="text" class="form-control" placeholder="Ex:Djidjolé">
+                        </div>
+                        <div class="col">
+                            <label for="inputAddress2">Téléphone</label>
+                            <input type="tel" class="form-control" placeholder="Votre numéro svp">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputAddress2">Email</label>
+                        <input type="email" class="form-control" id="inputAddress2" placeholder="abalokokou@gmail.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea">Questions/Commentaires</label>
+                        <input type="text" class="form-control" id="textearea" placeholder="Votre commentaire svp">
+                    </div>
+                    <br>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn- mb-2">Soumettre</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+        <!-- Ma section localisation -->
+
+        <div class="container mx-auto divloca" style="width:50%">
+            <p>LOCALISATION</p>
+            <div class="ifr mx-auto" id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.578306569757!2d1.2117513147689694!3d6.187144995520801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023e3ecf56780f5%3A0x8f11bb708640e53e!2scoin%20des%20vielles%20marmites!5e0!3m2!1sfr!2stg!4v1653921877411!5m2!1sfr!2stg"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+
+
+
+
+        <section class="p-6 md:p-12 text-center md:text-left shadow-lg rounded-md" style="background-image: url(https://mdbcdn.b-cdn.net/img/Photos/Others/background2.jpg)">
+            <div class="flex justify-center">
+                <div class="max-w-3xl">
+                    <div class="block p-6 rounded-lg shadow-lg bg-white m-4">
+                        <div class="md:flex md:flex-row">
+                            <div class="md:w-96 w-36 flex justify-center items-center mb-6 lg:mb-0 mx-auto md:mx-0">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-full shadow-md" alt="woman avatar" />
+                            </div>
+                            <div class="md:ml-6">
+                                <p class="text-gray-500 font-light mb-6">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.
+                                </p>
+                                <p class="font-semibold text-xl mb-2 text-gray-800">Anna Smith</p>
+                                <p class="font-semibold text-gray-500 mb-0">Product manager</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -77,69 +191,6 @@
 
 
 
-    </div>
-
-
-
-    <!-- PARTIE 3 (FORMULAIRE) -->
-
-    <div class="div-bg-formulaire" style="background-color:#E56E00;">
-        <div class="container mx-auto formulaire " style="width:50%;">
-            <h2>Nous contacter</h2>
-            <form action="traitement.php" method="post">
-                <div class="row">
-                    <div class="col">
-                        <label for="inputAddress2">Nom</label>
-                        <input type="text" class="form-control" placeholder="Ex:ABALO">
-                    </div>
-                    <div class="col">
-                        <label for="inputAddress2">Prénoms</label>
-                        <input type="text" class="form-control" placeholder="Ex:Gérard">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="inputAddress">Adresse</label>
-                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-
-                <div class="row">
-                    <div class="col">
-                        <label for="inputAddress2">Quartier</label>
-                        <input type="text" class="form-control" placeholder="Ex:Djidjolé">
-                    </div>
-                    <div class="col">
-                        <label for="inputAddress2">Téléphone</label>
-                        <input type="tel" class="form-control" placeholder="Votre numéro svp">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="inputAddress2">Email</label>
-                    <input type="email" class="form-control" id="inputAddress2" placeholder="abalokokou@gmail.com">
-                </div>
-                <div class="form-group">
-                    <label for="textarea">Questions/Commentaires</label>
-                    <input type="text" class="form-control" id="textearea" placeholder="Votre commentaire svp">
-                </div>
-                <br>
-
-                <div class="form-group">
-                    <button type="submit" class="btn btn- mb-2">Soumettre</button>
-                </div>
-
-            </form>
-
-        </div>
-    </div>
-
-
-    <div class="container mx-auto divloca" style="width:50%">
-        <p>LOCALISATION</p>
-        <div class="ifr mx-auto" id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.578306569757!2d1.2117513147689694!3d6.187144995520801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023e3ecf56780f5%3A0x8f11bb708640e53e!2scoin%20des%20vielles%20marmites!5e0!3m2!1sfr!2stg!4v1653921877411!5m2!1sfr!2stg"
-                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </div>
 
 
 
@@ -161,20 +212,8 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </body>
 
 </html>

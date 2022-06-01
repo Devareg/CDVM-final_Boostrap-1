@@ -8,6 +8,14 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <!-- POUR LE FOOTER -->
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&family=Josefin+Sans:wght@100;300;600;700&family=Koulen&family=Macondo&family=Prompt:wght@200;300;500;600;800;900&family=Smooch&display=swap');
@@ -52,8 +60,8 @@
     </div>
 
     <!-- PARTIE 2 (NOS MENUS) -->
-    <div class="container">
-        <section>
+    <div>
+        <section class="container">
             <p class="p-menu">NOS MENUS</p>
 
 
@@ -97,12 +105,37 @@
                 <button class="btn btn-primary plat-plus" type="button">Cliquer ici pour accéder à tout nos plats</button>
 
             </div>
+
+
+            <!--LIVRAISON PARTOUT. -->
+
+            <div class="d-flex mx-auto livraison">
+
+                <div>
+                    <img class=" image-livr" src="./images/livraison.png" alt="image de livraison">
+                </div>
+                <div>
+                    <p class="  paragraphe-livr">Livraison partout à Lomé</p>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
         </section>
 
         <!-- PARTIE 3 (FORMULAIRE) -->
 
         <div class="div-bg-formulaire" style="background-color:#E56E00;">
-            <div class="container mx-auto formulaire " style="width:50%;">
+            <div class=" mx-auto formulaire " style="width:50%;">
                 <h2>Nous contacter</h2>
                 <form action="traitement.php" method="post">
                     <div class="row">
@@ -152,7 +185,7 @@
 
         <!-- Ma section localisation -->
 
-        <div class="container mx-auto divloca" style="width:50%">
+        <div class=" container mx-auto divloca" style="width:50%">
             <p>LOCALISATION</p>
             <div class="ifr mx-auto" id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.578306569757!2d1.2117513147689694!3d6.187144995520801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023e3ecf56780f5%3A0x8f11bb708640e53e!2scoin%20des%20vielles%20marmites!5e0!3m2!1sfr!2stg!4v1653921877411!5m2!1sfr!2stg"
@@ -161,30 +194,224 @@
         </div>
 
 
+        <div class=" avis">
+
+            <div class="accordion d-flex justify-content-center align-items-center height" id="accordionExample">
 
 
 
 
-        <section class="p-6 md:p-12 text-center md:text-left shadow-lg rounded-md" style="background-image: url(https://mdbcdn.b-cdn.net/img/Photos/Others/background2.jpg)">
-            <div class="flex justify-center">
-                <div class="max-w-3xl">
-                    <div class="block p-6 rounded-lg shadow-lg bg-white m-4">
-                        <div class="md:flex md:flex-row">
-                            <div class="md:w-96 w-36 flex justify-center items-center mb-6 lg:mb-0 mx-auto md:mx-0">
-                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" class="rounded-full shadow-md" alt="woman avatar" />
-                            </div>
-                            <div class="md:ml-6">
-                                <p class="text-gray-500 font-light mb-6">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quam sapiente molestiae numquam quas, voluptates omnis nulla ea odio quia similique corrupti magnam.
-                                </p>
-                                <p class="font-semibold text-xl mb-2 text-gray-800">Anna Smith</p>
-                                <p class="font-semibold text-gray-500 mb-0">Product manager</p>
-                            </div>
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <div class="p-3">
+
+
+
+                            <ul class="testimonial-list">
+                                <li>
+
+                                    <div class="card avis-arriere p-3" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                                        <div class="d-flex flex-row align-items-center">
+
+                                            <img src="./images/David.png" width="50" class="rounded-circle">
+
+                                            <div class="d-flex flex-column ml-2">
+
+                                                <span class="font-weight-normal">Rose GNAO</span>
+                                                <span>Adéwi</span>
+                                                <span> </span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="card avis-arriere p-3" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+
+                                        <div class="d-flex flex-row align-items-center">
+
+                                            <img src="https://i.imgur.com/udGH5tO.jpg" width="50" class="rounded-circle">
+
+                                            <div class="d-flex flex-column ml-2">
+
+                                                <span class="font-weight-normal">John Reeves</span>
+                                                <span>Head of Sales, Asana</span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                            </ul>
                         </div>
                     </div>
+
+                    <div class="col-md-6">
+                        <div class="p-3">
+                            <ul class="testimonial-list">
+                                <li>
+
+                                    <div class="card avis-arriere p-3" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                                        <div class="d-flex flex-row align-items-center">
+
+                                            <img src="https://i.imgur.com/G1pXs7D.jpg" width="50" class="rounded-circle">
+
+                                            <div class="d-flex flex-column ml-2">
+
+                                                <span class="font-weight-normal">Milton Austin</span>
+                                                <span>Sales Manager, Stack</span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                                <li>
+
+                                    <div class="card avis-arriere p-3" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+
+                                        <div class="d-flex flex-row align-items-center">
+
+                                            <img src="https://i.imgur.com/G1pXs7D.jpg" width="50" class="rounded-circle">
+
+                                            <div class="d-flex flex-column ml-2">
+
+                                                <span class="font-weight-normal">Milton Austin</span>
+                                                <span>Sales Manager, Stack</span>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+
+
+
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+
                 </div>
             </div>
-        </section>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- -----------------------------------------SECTION RESEAUX SOCIAUX----------------------------------------------------------------- -->
+
+        <div class="d-flex social-medias  ">
+            <ul class=" list-unstyled mx-auto d-flex">
+                <li class="ms-2 icon-social">
+                    <a href="#"><img class="" width="38" height="38" src="./images/fcbook_icon.png" alt="icon facebook"></a>
+                </li>
+                <li class="ms-2 icon-social">
+                    <a href="#"><img class="" width="43" height="43" src="./images/insta_icon.png" alt="icon facebook" style="margin-top:-0.3vh"></a>
+                </li>
+                <li class="ms-2 icon-social">
+                    <a href="#"><img class="" width="40" height="40" src="./images/whatsapp_icon.png" alt="icon facebook"></a>
+                </li>
+
+
+            </ul>
+
+        </div>
+
+
+
+
+
+
+
+        <!-- -----------------------------------------SECTION FOOTER----------------------------------------------------------------- -->
+
+
+
+
+
+
+        <footer class="py-5">
+            <div class="row">
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Section</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 offset-md-1 mb-3">
+                    <form>
+                        <h5>Subscribe to our newsletter</h5>
+                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                            <label for="newsletter1" class="visually-hidden">Email address</label>
+                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>© 2022 Company, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                </ul>
+            </div>
+        </footer>
 
 
 

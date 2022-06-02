@@ -5,17 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Coin Des Vieilles Marmites</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 
-    <!-- POUR LE FOOTER -->
-    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
-    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
-    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
-    <meta name="theme-color" content="#712cf9">
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;900&family=Josefin+Sans:wght@100;300;600;700&family=Koulen&family=Macondo&family=Prompt:wght@200;300;500;600;800;900&family=Smooch&display=swap');
@@ -28,9 +21,9 @@
 
         <div class="container menus">
             <div>
-                <a class="navbar-brand">EVENEMENT</a>
-                <a class="navbar-brand">SERVICES</a>
-                <a class="navbar-brand">JOBS</a>
+                <a href="#" class="navbar-brand">EVENEMENT</a>
+                <a href="#" class="navbar-brand">SERVICES</a>
+                <a href="#" class="navbar-brand">JOBS</a>
             </div>
 
 
@@ -64,9 +57,6 @@
         <section class="container">
             <p class="p-menu">NOS MENUS</p>
 
-
-            <!-- <img src="./images/slide_plat1.png" class="d-grid gap-1 col-8 mx-auto" style="width:110vh; max-width: 100%; height: auto; display: block" alt="menu de plats"> -->
-
             <section>
                 <div class="container-lg my-3 ">
                     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
@@ -74,7 +64,7 @@
                         <ol class="carousel-indicators">
                             <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
                             <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-                            <!-- <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li> -->
+
                         </ol>
 
                         <!-- Wrapper for carousel items -->
@@ -101,7 +91,7 @@
             </section>
 
             <!-- bouton pour accéder aux restes de mes plats. -->
-            <div class="d-grid gap-1 col-8 mx-auto">
+            <div class="d-grid gap-1 col-6 mx-auto">
                 <button class="btn btn-primary plat-plus" type="button">Cliquer ici pour accéder à tout nos plats</button>
 
             </div>
@@ -145,7 +135,7 @@
 
         <!-- PARTIE 3 (FORMULAIRE) -->
 
-        <div class="div-bg-formulaire" style="background-color:#E56E00;">
+        <div class="div-bg-formulaire" style="background-color:#E56E00; ">
             <div class=" mx-auto formulaire " style="width:50%;">
                 <h2>Nous contacter</h2>
                 <form action="traitement.php" method="post">
@@ -209,8 +199,13 @@
         <!-- Ma section des avis (témoignages des gens) -->
 
         <div class="avis">
+            <div>
+                <p>AVIS CLIENTS</p>
+                <textarea name="textarea" id="" cols="30" rows="10"></textarea>
+            </div>
 
             <div class="accordion d-flex justify-content-center align-items-center height" id="accordionExample">
+
 
 
 
@@ -219,7 +214,9 @@
 
                     <div class="col-md-6">
 
+
                         <div class="p-3">
+
 
 
 
@@ -234,11 +231,11 @@
 
                                             <div class="d-flex flex-column ml-2">
 
-                                                <span class="font-weight-normal">Rose GNAO</span>
-                                                <span>Adéwi</span>
+                                                <span class=" text-gras font-weight-normal">Rose GNAO</span>
+                                                <span class="text-gras">Adéwi</span>
                                                 <span>"Leurs bonne gestion de la clientèle"
                                                     nous propose des plats super bon dans un confort bien aménagé avec une condition assez confortable pour les client un accueil charmant et une satisfaction à 100% </span>
-                                                <span class="date">01 Avril 2022</span>
+                                                <span class="date text-gras">01 Avril 2022</span>
                                             </div>
 
 
@@ -256,13 +253,13 @@
 
                                             <div class="d-flex flex-column ml-2">
 
-                                                <span class="font-weight-normal">Césare AMA</span>
-                                                <span>Djidjolé</span>
+                                                <span class="text-gras font-weight-normal">Césare AMA</span>
+                                                <span class="text-gras">Djidjolé</span>
                                                 <span>
                                                     Rapide et simple
                                                     La Restauration rapide comme on l aime. Les sandwichs livrés aussi rapidement que possible. L'absence de sourire des serveuses constitue malgré tout un handicap comme une invitation a quitter les lieux au plus vite, j'y suis donc aller a l'emporter.</span>
 
-                                                <span class="date">10 Mai 2022</span>
+                                                <span class="date text-gras">10 Mai 2022</span>
                                             </div>
 
 
@@ -288,11 +285,11 @@
 
                                             <div class="d-flex flex-column ml-2">
 
-                                                <span class="font-weight-normal">Karim BAH</span>
-                                                <span>Avédji</span>
+                                                <span class="text-gras font-weight-normal">Karim BAH</span>
+                                                <span class="text-gras">Avédji</span>
                                                 <span>Excellentissime
                                                     Le cadre magique, le personnel attentionné, la cuisine savoureuse, un plaisir des yeux autant que des papilles font du coin des vieille marmites LE restaurant incontournable de Lomé. Merci à toute l'équipe.</span>
-                                                <span class="date">07 Mars 2021</span>
+                                                <span class="date text-gras">07 Mars 2021</span>
 
                                             </div>
 
@@ -311,13 +308,13 @@
 
                                             <div class="d-flex flex-column ml-2">
 
-                                                <span class="font-weight-normal">Kokou MAMADOU</span>
-                                                <span>Avenou</span>
+                                                <span class="text-gras font-weight-normal">Kokou MAMADOU</span>
+                                                <span class="text-gras">Avenou</span>
                                                 <span>
                                                     Rapidité exclusive
                                                     " des explosions de saveurs"
                                                     la Restauration rapide comme on l’aime. livreur très poli et gentil.</span>
-                                                <span class="date">02 Mai 2022</span>
+                                                <span class="date text-gras">02 Mai 2022</span>
 
                                             </div>
 
@@ -348,13 +345,13 @@
         <div class="d-flex social-medias  ">
             <ul class=" list-unstyled mx-auto d-flex">
                 <li class="ms-2 icon-social">
-                    <a href="#"><img class="" width="38" height="38" src="./images/fcbook_icon.png" alt="icon facebook"></a>
+                    <a href="#"><img class="icon-fc-wha" width="38" height="38" src="./images/fcbook_icon.png" alt="icon facebook"></a>
                 </li>
                 <li class="ms-2 icon-social">
                     <a href="#"><img class="" width="43" height="43" src="./images/insta_icon.png" alt="icon facebook" style="margin-top:-0.3vh"></a>
                 </li>
                 <li class="ms-2 icon-social">
-                    <a href="#"><img class="" width="40" height="40" src="./images/whatsapp_icon.png" alt="icon facebook"></a>
+                    <a href="#"><img class="icon-fc-wha" width="40" height="40" src="./images/whatsapp_icon.png" alt="icon facebook"></a>
                 </li>
 
 
@@ -380,13 +377,13 @@
                 </div>
 
                 <div class="col-6 col-md-2 mb-3 aide">
-                    <h5>BESOIN D’AIDE ?</h5>
+                    <h5 class="bes-aide">BESOIN D’AIDE ?</h5>
                     <ul class="nav flex-column">
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
 
-                            Tel: +228 91 38 65 10
-                            Whatsapp: +228 91 38 65 10
-                            Email: coindesviellesmarmites@gmail.com
+                            Tel: +228 91 38 65 10 <br>
+                            Whatsapp: +228 91 38 65 10 <br>
+                            Email: coindesviellesmarmites@gmail.com <br>
                             Djidjolé, Rue 124, Le Sauveur, Lomé,TOGO</a></li>
 
                     </ul>
@@ -394,25 +391,29 @@
 
                 <div class="col-md-5 offset-md-1 mb-3">
                     <form>
-                        <h5>Subscribe to our newsletter</h5>
-                        <p>Monthly digest of what's new and exciting from us.</p>
+                        <h5>RESTEZ CONNECTES</h5>
                         <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                             <label for="newsletter1" class="visually-hidden">Email address</label>
-                            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                            <button class="btn btn-primary" type="button">Subscribe</button>
+                            <input id="newsletter1" type="text" class="form-control email-area" placeholder="Votre email">
+
                         </div>
+                        <button class="btn bouton-abonner btn-primary" type="button">S'abonner</button>
                     </form>
+
+
+
                 </div>
+                <div class="final-word">
+                    <p>© 2022 Company, Inc. All rights reserved.</p>
+                </div>
+
+
+
+
+
+
             </div>
 
-            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-                <p>© 2022 Company, Inc. All rights reserved.</p>
-                <ul class="list-unstyled d-flex">
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-                    <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-                </ul>
-            </div>
         </footer>
 
 

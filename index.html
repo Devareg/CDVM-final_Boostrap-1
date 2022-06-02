@@ -23,7 +23,7 @@
 
 <body>
 
-    <nav class="navbar bg-light ">
+    <nav class="navbar bg ">
         <a href="#"><img src="./images/logo.png" class="img-responsive ms-5" alt="logo" style="width: 20vh; max-width: 100%; height: auto; display: block;"></a>
 
         <div class="container menus">
@@ -68,7 +68,7 @@
             <!-- <img src="./images/slide_plat1.png" class="d-grid gap-1 col-8 mx-auto" style="width:110vh; max-width: 100%; height: auto; display: block" alt="menu de plats"> -->
 
             <section>
-                <div class="container-lg my-3">
+                <div class="container-lg my-3 ">
                     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
                         <!-- Carousel indicators -->
                         <ol class="carousel-indicators">
@@ -80,10 +80,10 @@
                         <!-- Wrapper for carousel items -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="./images/slide_plat1.png" class="d-block w-100" alt="Slide 1">
+                                <img src="./images/slide_plat1.png" class="d-block w-100 img-slide" alt="Slide 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="./images/slide_plat2.png" class="d-block w-100" alt="Slide 2">
+                                <img src="./images/slide_plat2.png" class="d-block w-100 img-slide" alt="Slide 2">
                             </div>
 
                             <!-- Carousel controls -->
@@ -120,17 +120,28 @@
 
 
             </div>
-
-
-
-
-
-
-
-
-
-
         </section>
+
+
+        <!-- -------------------------------PARTIE PARTENAIRES------------------------------- -->
+        <div class="partenaire-arrire-plan">
+            <section class="container col-xxl-10 px-2 py-0">
+                <div class="mx-auto d-flex justify-content-center align-items-center justify-content-between">
+                    <img class="logo-partners" src="./images/asky.PNG" alt="logo asky" style=height:60px;>
+                    <img class="logo-partners" src="./images/google.png" alt="logo de google" style=height:70px;>
+                    <img class="logo-partners" src="./images/gozem.png" alt="logo gozem" height="60">
+                    <img class="logo-partners" src="./images/Mcdonalds.png" alt="Mcdonalds logo" height="60">
+                    <img class="logo-partners" src="./images/Moov_Africa.png" alt="logo Moov Africa" height="60">
+                    <img class="logo-partners" src="./images/made-logo.png" alt="made in togo logo" height="55">
+                    <img class="logo-partners" src="./images/logo2017.png" alt="logo BB" height="55">
+
+                </div>
+            </section>
+        </div>
+
+
+
+
 
         <!-- PARTIE 3 (FORMULAIRE) -->
 
@@ -185,16 +196,19 @@
 
         <!-- Ma section localisation -->
 
-        <div class=" container mx-auto divloca" style="width:50%">
-            <p>LOCALISATION</p>
-            <div class="ifr mx-auto" id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.578306569757!2d1.2117513147689694!3d6.187144995520801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023e3ecf56780f5%3A0x8f11bb708640e53e!2scoin%20des%20vielles%20marmites!5e0!3m2!1sfr!2stg!4v1653921877411!5m2!1sfr!2stg"
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <section>
+            <div class=" container mx-auto divloca" style="width:50%">
+                <p>LOCALISATION</p>
+                <div class="ifr mx-auto" id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.578306569757!2d1.2117513147689694!3d6.187144995520801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1023e3ecf56780f5%3A0x8f11bb708640e53e!2scoin%20des%20vielles%20marmites!5e0!3m2!1sfr!2stg!4v1653921877411!5m2!1sfr!2stg"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
-        </div>
+        </section>
 
+        <!-- Ma section des avis (témoignages des gens) -->
 
-        <div class=" avis">
+        <div class="avis">
 
             <div class="accordion d-flex justify-content-center align-items-center height" id="accordionExample">
 
@@ -216,15 +230,17 @@
 
                                         <div class="d-flex flex-row align-items-center">
 
-                                            <img src="./images/David.png" width="50" class="rounded-circle">
+                                            <img src="./images/David.png" width="50" class=" img-avi rounded-circle" alt="image homme ">
 
                                             <div class="d-flex flex-column ml-2">
 
                                                 <span class="font-weight-normal">Rose GNAO</span>
                                                 <span>Adéwi</span>
-                                                <span> </span>
-
+                                                <span>"Leurs bonne gestion de la clientèle"
+                                                    nous propose des plats super bon dans un confort bien aménagé avec une condition assez confortable pour les client un accueil charmant et une satisfaction à 100% </span>
+                                                <span class="date">01 Avril 2022</span>
                                             </div>
+
 
                                         </div>
 
@@ -236,14 +252,19 @@
 
                                         <div class="d-flex flex-row align-items-center">
 
-                                            <img src="https://i.imgur.com/udGH5tO.jpg" width="50" class="rounded-circle">
+                                            <img src="./images/mec.png" width="50" class=" img-avi rounded-circle" alt="image homme1 ">
 
                                             <div class="d-flex flex-column ml-2">
 
-                                                <span class="font-weight-normal">John Reeves</span>
-                                                <span>Head of Sales, Asana</span>
+                                                <span class="font-weight-normal">Césare AMA</span>
+                                                <span>Djidjolé</span>
+                                                <span>
+                                                    Rapide et simple
+                                                    La Restauration rapide comme on l aime. Les sandwichs livrés aussi rapidement que possible. L'absence de sourire des serveuses constitue malgré tout un handicap comme une invitation a quitter les lieux au plus vite, j'y suis donc aller a l'emporter.</span>
 
+                                                <span class="date">10 Mai 2022</span>
                                             </div>
+
 
                                         </div>
 
@@ -263,12 +284,15 @@
 
                                         <div class="d-flex flex-row align-items-center">
 
-                                            <img src="https://i.imgur.com/G1pXs7D.jpg" width="50" class="rounded-circle">
+                                            <img src="./images/mec2.png" width="50" class="img-avi rounded-circle" alt="image homme2 ">
 
                                             <div class="d-flex flex-column ml-2">
 
-                                                <span class="font-weight-normal">Milton Austin</span>
-                                                <span>Sales Manager, Stack</span>
+                                                <span class="font-weight-normal">Karim BAH</span>
+                                                <span>Avédji</span>
+                                                <span>Excellentissime
+                                                    Le cadre magique, le personnel attentionné, la cuisine savoureuse, un plaisir des yeux autant que des papilles font du coin des vieille marmites LE restaurant incontournable de Lomé. Merci à toute l'équipe.</span>
+                                                <span class="date">07 Mars 2021</span>
 
                                             </div>
 
@@ -283,12 +307,17 @@
 
                                         <div class="d-flex flex-row align-items-center">
 
-                                            <img src="https://i.imgur.com/G1pXs7D.jpg" width="50" class="rounded-circle">
+                                            <img src="./images/prayer.png" width="50" class="img-avi rounded-circle" alt="image homme4 ">
 
                                             <div class="d-flex flex-column ml-2">
 
-                                                <span class="font-weight-normal">Milton Austin</span>
-                                                <span>Sales Manager, Stack</span>
+                                                <span class="font-weight-normal">Kokou MAMADOU</span>
+                                                <span>Avenou</span>
+                                                <span>
+                                                    Rapidité exclusive
+                                                    " des explosions de saveurs"
+                                                    la Restauration rapide comme on l’aime. livreur très poli et gentil.</span>
+                                                <span class="date">02 Mai 2022</span>
 
                                             </div>
 
@@ -310,15 +339,6 @@
             </div>
 
         </div>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -343,11 +363,6 @@
         </div>
 
 
-
-
-
-
-
         <!-- -----------------------------------------SECTION FOOTER----------------------------------------------------------------- -->
 
 
@@ -355,38 +370,25 @@
 
 
 
-        <footer class="py-5">
+        <footer class="container py-5">
             <div class="row">
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
-                </div>
+                <h5 class=" titre-cdvm">Restaurant Coin Des Vieilles Marmites</h5>
 
                 <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-                    </ul>
+
+                    <img class="logo-footer" src="./images/logo_bas.png" alt="logo de footer">
                 </div>
 
-                <div class="col-6 col-md-2 mb-3">
-                    <h5>Section</h5>
+                <div class="col-6 col-md-2 mb-3 aide">
+                    <h5>BESOIN D’AIDE ?</h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">
+
+                            Tel: +228 91 38 65 10
+                            Whatsapp: +228 91 38 65 10
+                            Email: coindesviellesmarmites@gmail.com
+                            Djidjolé, Rue 124, Le Sauveur, Lomé,TOGO</a></li>
+
                     </ul>
                 </div>
 

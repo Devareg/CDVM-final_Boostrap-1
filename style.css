@@ -6,7 +6,7 @@ font-family: 'Prompt', sans-serif;
 font-family: 'Smooch', cursive; */
 
 body {
-    background-color: #EBE7E6;
+    background-color: rgb(233, 233, 233) !important;
 }
 
 .menus {
@@ -40,9 +40,9 @@ body {
 }
 
 .vtr {
-    margin-top: -15vh!important;
+    margin-top: -30px!important;
     font-size: 10vh!important;
-    padding-right: -60vh;
+    padding-right: -60px;
 }
 
 .sauce {
@@ -71,21 +71,61 @@ body {
     font-family: 'Josefin Sans', sans-serif !important;
     border: none !important;
     font-weight: 700 !important;
-    font-size: 5vh !important;
+    font-size: 4vh !important;
     border-radius: 20px !important;
     margin-bottom: 10vh!important;
     margin-top: 10vh;
+    min-width: 2vh;
 }
+
+.carousel-slides {
+    justify-content: center !important;
+}
+
+.carousel-item {}
+
+.img-slide {}
 
 .carousel-control-prev-icon {}
 
 .carousel-control-next-icon {}
 
 
+/* -----------------------------------------LIVRAISON PARTOUT A LOME-------------------------------------------------- */
+
+.image-livr {
+    height: 15vh;
+    padding-left: 5px;
+}
+
+.paragraphe-livr {
+    font-family: 'Josefin Sans', sans-serif !important;
+    font-weight: 700;
+    font-size: 4vh;
+    padding: 4vh;
+}
+
+.livraison {
+    justify-content: center;
+}
+
+.partenaire-arrire-plan {
+    background-color: white !important;
+    height: 100px;
+}
+
+.logo-partners {
+    margin-top: 15px;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+
 /* -----------------------------------------ICI COMMENCE MA SECTION DE FORMULAIRE-------------------------------------------------- */
 
 .div-bg-formulaire {
     padding-bottom: 10vh;
+    width: 100% !important;
 }
 
 .formulaire {
@@ -104,6 +144,8 @@ textarea {
 .form-control {
     border-radius: 0 !important;
     margin-bottom: 3vh;
+    min-width: 20%;
+    min-height: 1%;
 }
 
 .formulaire h2 {
@@ -125,7 +167,8 @@ textarea {
 /* -----------------------------------------ICI COMMENCE MA SECTION DE LOCALISATION-------------------------------------------------- */
 
 .divloca {
-    margin-top: 5vh;
+    margin-top: 10vh;
+    padding-bottom: 10vh;
 }
 
 .divloca p {
@@ -135,3 +178,104 @@ textarea {
 
 
 /* -----------------------------------------ICI COMMENCE MA SECTION DES AVIS-------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+.avis {
+    background-color: #e56e00;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+@media only screen and (max-width:768px) {
+    .container {
+        margin-top: 66px;
+    }
+}
+
+.height {
+    height: 100vh;
+}
+
+.card {
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 40px rgba(51, 51, 51, .1)
+}
+
+.card:hover {
+    background-color: #eee;
+}
+
+.ratings i {
+    color: orange;
+}
+
+.testimonial-list {
+    list-style: none;
+}
+
+.testimonial-list li {
+    margin-bottom: 20px;
+}
+
+.testimonials-margin {
+    margin-top: -19px;
+}
+
+
+/* --------------------------------------------------------------------------- */
+
+.avis-arriere {
+    height: 30vh;
+    width: 60vh;
+    border-radius: 20px !important;
+}
+
+.date {
+    text-align: right;
+}
+
+.img-avi {
+    align-self: flex-start !important;
+    margin-right: 5px;
+}
+
+
+/* -----------------------------------------SECTION SOCIAL MEDIAS-------------------------------------------------- */
+
+.social-medias {
+    background-color: black;
+    margin: 0 !important;
+    width: 100% !important;
+    height: 8vh !important;
+    justify-items: center !important;
+    justify-self: center !important;
+}
+
+.icon-social {
+    margin-top: 1.5vh;
+    margin-right: 4vh;
+}
+
+
+/* -------------------------------------------------FOOTER---------------------------------------------------------------- */
+
+footer {
+    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Koulen', cursive;
+    font-family: 'Macondo', cursive;  */
+}
+
+.logo-footer {
+    height: 20vh;
+}
+
+.titre-cdvm {
+    font-size: 3vh !important;
+    font-weight: 700;
+}
+
+.aide {
+    margin-top: 5vh !important;
+    font-family: 'Inter', sans-serif;
+}

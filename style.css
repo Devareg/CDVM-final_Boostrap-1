@@ -228,15 +228,29 @@ textarea {
 
 /* -----------------------------------------ICI COMMENCE MA SECTION DES AVIS-------------------------------------------------- */
 
+.espace-haut {
+    margin-top: 8vh !important;
+    margin-bottom: 8vh !important;
+}
+
+.espace-bas {
+    margin-bottom: 20vh;
+}
+
 .Avis-client {
     color: white;
     font-family: josefin sans;
     font-weight: 700;
+    margin-left: 22vh;
 }
 
 .avis-digit {
     border: none;
-    border-radius: 25px
+    border-radius: 25px;
+    margin-right: 18vh;
+    width: 30vh;
+    text-align: center;
+    border: none;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
@@ -318,6 +332,12 @@ textarea {
 .icon-social {
     margin-top: 1.5vh;
     margin-right: 4vh;
+    opacity: .6;
+    transition: opacity .3s;
+}
+
+.icon-social:hover {
+    opacity: 1;
 }
 
 
@@ -367,8 +387,20 @@ footer h5 {
     width: 22vh !important;
 }
 
+.final-div {
+    margin-top: -1.4vh !important;
+}
+
 .final-word {
     margin-left: -40vh !important;
     padding-left: -50vh!important;
-    position: relative;
+    position: relative !important;
+    text-decoration: none;
+    color: black;
+    font-size: 3vh !important;
+}
+
+.a-propos {
+    font-size: 2.2vh !important;
+    margin-top: 1.2vh;
 }

@@ -35,10 +35,46 @@ body {
 .vtr {
     font-size: 10vh!important;
     padding-right: -60px;
+    animation: vtr 200ms;
+}
+
+@keyframes .vtr {
+    0% {
+        transform: translateX(-9999);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.vtr {
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(290px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .sauce {
     margin-left: -15vh;
+}
+
+.sauce {
+    margin-right: -50px;
+    animation: transform cubic-bezier(0, 0, 0, 0.99) .10s;
+}
+
+.sauce:hover {
+    transform: scale(1.1) rotate(10deg);
 }
 
 .btn-menu-reserv {
@@ -90,7 +126,34 @@ body {
 }
 
 .livraison {
+    display: flex;
+    margin-top: 50px;
     justify-content: center;
+    animation-duration: 4s;
+    animation-name: glissement;
+    animation-iteration-count: infinite;
+}
+
+.livraison {
+    animation-direction: alternate-reverse;
+}
+
+@keyframes glissement {
+    0% {
+        margin-right: 50%;
+        width: 200%;
+        opacity: 0;
+    }
+    50% {
+        margin-right: 100%;
+        width: 100%;
+        opacity: 1;
+    }
+    100% {
+        margin-right: -50%;
+        width: 100%;
+        opacity: 0;
+    }
 }
 
 .partenaire-arrire-plan {
@@ -165,6 +228,17 @@ textarea {
 
 /* -----------------------------------------ICI COMMENCE MA SECTION DES AVIS-------------------------------------------------- */
 
+.Avis-client {
+    color: white;
+    font-family: josefin sans;
+    font-weight: 700;
+}
+
+.avis-digit {
+    border: none;
+    border-radius: 25px
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
 .avis {
     background-color: #e56e00;
@@ -233,7 +307,6 @@ textarea {
     background-color: black;
     margin: 0 !important;
     width: 100% !important;
-    /* height: 8vh !important; */
     justify-items: center !important;
     justify-self: center !important;
 }
@@ -252,8 +325,6 @@ textarea {
 
 footer {
     font-family: 'Josefin Sans', sans-serif;
-    /* font-family: 'Koulen', cursive;
-    font-family: 'Macondo', cursive;  */
 }
 
 .logo-footer {
@@ -280,7 +351,7 @@ footer {
 
 footer h5 {
     font-weight: 700;
-    font-size: 2.5vh;
+    font-size: 2vh;
 }
 
 
@@ -293,9 +364,11 @@ footer h5 {
 }
 
 .email-area {
-    width: 30vh !important;
+    width: 22vh !important;
 }
 
 .final-word {
-    margin-left: 10vh !important;
+    margin-left: -40vh !important;
+    padding-left: -50vh!important;
+    position: relative;
 }
